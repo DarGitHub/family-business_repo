@@ -235,6 +235,15 @@ img {
     margin-top: 20px;
 }
 
+.submit:hover {
+    background-color: #eba83a;
+    font-size: 1.5rem;    
+}
+.reset:hover {
+    background-color: #4a503d;
+    font-size: 1.5rem;    
+}
+
 /* Post */
 .post {
     padding: 50px 30px;
