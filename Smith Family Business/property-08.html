@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/utilities.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Welcome To Family Business</title>
+</head>
+<body id="home">
+    <header class="hero property08">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+               <span class="text-primary"><i class="fas fa-building"></i> Rental</span>Property
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#properties">Properties</a></li>     
+                    <li><a href="index.html#blog">Blog</a></li>     
+                    <li><a href="index.html#contact">Contact</a></li>     
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Property 08</h1>
+            
+        </div>
+    </header>
+    
+    <main>
+        <section id="properties" class="properties flex-grid section-padding">
+            <header class="section-header">
+                <h4>This is what we do</h4>
+                <h2>Business Properties</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi.</p>
+            </header>
+            <div class="row">
+                <div class="column">
+                    <!-- link to property-01 -->
+                    <a href="images/20170817_105129.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi.">
+                        <img src="images/20170817_105129.jpg" alt="">
+                    </a>
+                    <!-- link to property-02 -->
+                    <a href="images/20170818_005059.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi."><img src="images/20170818_005059.jpg" alt="">
+                    </a>   
+                </div>
+                    <!-- link to property-03 -->
+                <div class="column">
+                    <a href="images/20170818_004504.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi."><img src="images/20170818_004504.jpg" alt="">
+                    </a>
+                    <!-- link to property-04 -->
+                    <a href="images/20170818_004526.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi."><img src="images/20170818_004526.jpg" alt="">
+                    </a> 
+                </div>
+                <div class="column">
+                    <a href="images/20170818_004554.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi."><img src="images/20170818_004554.jpg" alt="">
+                    </a>
+                    <a href="images/20170818_004632.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi."><img src="images/20170818_004632.jpg" alt="">
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="images/20170818_004934.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi."><img src="images/20170818_004934.jpg" alt="">
+                    </a>
+                    <a href="images/20170818_005039.jpg" data-lightbox="properties" data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, commodi."><img src="images/20170818_005039.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark">
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      <p class="p">Created By: Darrell E. M. Smith</p>
+      <p>Copyright &copy; 2021 - Smith Family Business</p>
+    </footer>
+   
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+
+                if(!scrolled){
+                    navbar.style.transform = 'translateY(-100)';
+                    setTimeout(function() {
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    },200);
+                }
+                
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+
+    
+    </script>
+</body>
+
+</html>
